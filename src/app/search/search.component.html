@@ -1,0 +1,23 @@
+
+
+    <div fxLayoutAlign="center center" fxFlexFill >
+        <mat-card fxflex="30">
+            <mat-toolbar color="primary">Search Flights</mat-toolbar>
+            <form fxLayoutAlign="stretch" fxLayout="column">
+                <mat-form-field>
+                  <input matInput type="text"  placeholder="Travelling from"  >
+                </mat-form-field>
+              
+                <mat-form-field >
+                  
+                  <input matInput type="text"  placeholder="Destination">
+                </mat-form-field>
+                <mat-form-field >
+                  
+                    <input matInput type="text"  placeholder="date of travel">
+                  </mat-form-field>
+                <button mat-raised-button type="submit" routerLink="/flights">search</button>
+              </form>
+              
+        </mat-card>
+    </div>

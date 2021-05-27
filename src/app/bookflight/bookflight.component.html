@@ -1,0 +1,24 @@
+ <div fxLayoutAlign="center center" fxFlexFill >
+        <mat-card fxflex="30">
+            <mat-toolbar color="primary">Confirm Booking</mat-toolbar>
+            <form fxLayoutAlign="stretch" fxLayout="column">
+                <mat-form-field>
+                  <input matInput type="text"  placeholder="First name"  >
+                </mat-form-field>
+              
+                <mat-form-field >
+                  
+                  <input matInput type="text" #password placeholder="Last name">
+                </mat-form-field>
+              
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Male</mat-radio-button>
+                        <mat-radio-button value="2">Female</mat-radio-button>
+                      </mat-radio-group>  <br>         
+                <button mat-raised-button type="submit" routerLink="/confirm">confirm</button><br>
+                <button mat-raised-button type="submit" routerLink="/cancel">cancel</button>
+              </form>
+              
+        </mat-card>
+    </div>
+
