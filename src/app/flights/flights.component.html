@@ -1,1 +1,24 @@
-<button routerLink="/bookflight">book</button>
+<div class="card-body">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Flight Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>fare</th>
+                <th>Book</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let flight of allFlights'>
+                <td>{{flight.flight}}</td>
+                <td>{{flight.source}}</td>
+                <td>{{flight.destination}}</td>
+                <td>{{flight.date}}</td>
+                <td>{{flight.fare}}</td>
+                    <td><button mat-flat-button color="warn"  routerLink="/bookflight" (click)="makeBooking">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>

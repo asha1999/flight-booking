@@ -1,0 +1,75 @@
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by flight"
+          [(ngModel)]="flight"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchflight()"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4>Flights List</h4>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let x of flights; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveFlight(x, i)"
+        >
+          {{ x.flight}}
+        </li>
+      </ul>
+  
+      <button class="m-3 btn btn-sm btn-danger" (click)="removeAllFlights()">
+        Remove All
+      </button>
+    </div>
+    <div class="col-md-6">
+      <div *ngIf="currentFlight">
+        <h4>Search for Available Flights</h4>
+        <div>
+          <label><strong>flights:</strong></label> {{ currentFlight.flight }}
+        </div>
+        <div>
+          <label><strong>Source:</strong></label>
+          {{ currentFlight.source }}
+        </div>
+        <div>
+            <label><strong>Destination:</strong></label>
+            {{ currentFlight.destination }}
+          </div>
+          <div>
+            <label><strong>Date:</strong></label>
+            {{ currentFlight.date }}
+          </div>
+          <div>
+            <label><strong>Fare:</strong></label>
+            {{ currentFlight.fare }}
+          </div>
+        <div>
+          <label><strong>Status:</strong></label>
+          {{ currentFlight.published ? "Published" : "Pending" }}
+        </div>
+  
+        <a class="badge badge-warning" routerLink="/dashboard/flights/{{ currentFlight.id }}">
+          Edit
+        </a>
+      </div>
+  
+      <div *ngIf="!currentFlight">
+        <br />
+        <p>Please click on a Flights...</p>
+      </div>
+    </div>
+  </div>

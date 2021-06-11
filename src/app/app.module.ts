@@ -5,16 +5,20 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule ,routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import {MatInputModule} from '@angular/material/input';
 import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
-import {CdkTableModule} from '@angular/cdk/table';
+//import {CdkTableModule} from '@angular/cdk/table';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
+import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+//import { HttpConfigInterceptor } from '../app/interceptor/httpconfig.interceptor';
 
 
 
@@ -22,9 +26,8 @@ import {CdkTableModule} from '@angular/cdk/table';
   declarations: [
     AppComponent,
     routingComponents,
-    LoginComponent,
     
-    
+  
   ],
   imports: [
     BrowserModule,
@@ -33,10 +36,12 @@ import {CdkTableModule} from '@angular/cdk/table';
     BrowserAnimationsModule,
     MatFormFieldModule,
     FlexLayoutModule,
-    MatInputModule,
-    MatButtonModule,MatCardModule,MatToolbarModule,MatRadioModule,CdkTableModule
+    MatInputModule,FormsModule,ReactiveFormsModule,
+    MatButtonModule,MatCardModule,MatToolbarModule,MatRadioModule,MatGridListModule,MatSnackBarModule, NgbModule
   ],
-  providers: [],
+  
+providers: [
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
