@@ -1,3 +1,17 @@
-mat-card{
-    width:30%;
-}
+
+
+body{
+    background-image: url(../../assets/images/img2.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+ mat-card{
+     top: 30px;
+     width:30%;
+ }
+ .mat-typography{
+     background-color: darkblue;
+     color: white;
+ }

@@ -1,4 +1,10 @@
 mat-card{
-    width: 30%;
+    width: 25%;
+    top:30px;
+    background-color: green;
+    color: honeydew;
     
+}
+body{
+    background-color: black;
 }

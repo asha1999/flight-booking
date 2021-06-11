@@ -1,0 +1,12 @@
+body{
+    background-image: url(../../../assets/images/flight3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+label{
+    color:royalblue;
+}
+h4{
+    text-transform: uppercase;
+    color: red;
+}

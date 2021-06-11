@@ -1,0 +1,13 @@
+body{
+    background-image: url(../../images/1.jpg);
+}
+h4{
+    text-transform: uppercase;
+    color: crimson;
+}
+strong,label{
+    color: whitesmoke;
+}
+.value{
+    color: whitesmoke;
+}

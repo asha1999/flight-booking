@@ -1,3 +1,37 @@
-mat-card{
+.pic1,.pic2,.pic3{
+    position:relative;
+    opacity:0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pic1{
+    background-image: url('../../../images/img5.jpg');
+    min-height: 300px;
+}
+.pic2{
+    background-image: url('../../../images/land.jpg');
+    min-height: 400px;
+}
+.pic3{
+    background-image: url('../../../images/city3.jpg');
+    min-height: 400px;
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+.ptext{
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
     
 }

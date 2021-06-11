@@ -1,0 +1,16 @@
+
+
+div{
+   top:30%;
+}
+mat-card{
+   top: 30px;
+   background-color:palevioletred;
+   color: white;
+}
+button{
+   background-color:bisque;
+}
+body{
+   background-color: black;
+}

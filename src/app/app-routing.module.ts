@@ -14,6 +14,10 @@ import { AddFlightsComponent } from './flight-components/add-flights/add-flights
 import { FlightListComponent } from './flight-components/flight-list/flight-list.component';
 import { FlightDetailsComponent } from './flight-components/flight-details/flight-details.component';
 import { AppComponent } from './app.component';
+import { BookingdetailsComponent } from './bookingdetails/bookingdetails.component';
+
+
+
 
 
 const routes: Routes = [
@@ -29,6 +33,8 @@ const routes: Routes = [
   {path:'dashboard/flights/:id',component:FlightDetailsComponent},
   {path:'dashboard/add',component:AddFlightsComponent},
   {path:'searchflights',component:FlightsComponent},
+  {path:'reservation',component:BookingdetailsComponent},
+  
   
 {
   path: '',
@@ -45,4 +51,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents=[SignupComponent,HomeComponent,AdminComponent,LoginComponent,
-  SearchComponent,FlightsComponent,BookflightComponent,DashboardComponent,AddFlightsComponent,FlightListComponent,FlightDetailsComponent];
+  SearchComponent,FlightsComponent,BookflightComponent,DashboardComponent,AddFlightsComponent,FlightListComponent,FlightDetailsComponent,
+  BookingdetailsComponent];

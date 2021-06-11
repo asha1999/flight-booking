@@ -11,6 +11,12 @@ export class FlightService {
 
   constructor(private http: HttpClient) { }
 
+  public searchFlights(user:any)
+  {
+    console.log("search component");
+    return this.http.post("http://localhost:8080/api/flights",user,{responseType:'text' as 'json'})
+  }
+
   getAll(): Observable<any> {
     return this.http.get(baseUrl);
   }
@@ -40,5 +46,9 @@ export class FlightService {
   }
   getSourceFlight():Observable<any>{
     return this.http.get(`${baseUrl}`);
+  }
+  getFlight(data:any):Observable<any>
+  {
+    return this.http.post(baseUrl,data);
   }
 }

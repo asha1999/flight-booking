@@ -1,4 +1,7 @@
+
+<body>
 <div class="card-body">
+
     <table class="table table-hover">
         <thead>
             <tr>
@@ -16,9 +19,11 @@
                 <td>{{flight.source}}</td>
                 <td>{{flight.destination}}</td>
                 <td>{{flight.date}}</td>
-                <td>{{flight.fare}}</td>
-                    <td><button mat-flat-button color="warn"  routerLink="/bookflight" (click)="makeBooking">Book</button></td>
+                <td>{{flight.fare| currency:'INR':'symbol-narrow'}}</td>
+                    <td><button mat-flat-button color="warn"   (click)="makeBooking()">Book</button></td>
             </tr>
         </tbody>
     </table>
   </div>
+  </body>
+  

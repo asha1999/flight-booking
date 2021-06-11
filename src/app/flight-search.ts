@@ -1,7 +1,9 @@
 export interface FlightSearch {
-    source?:string,
-    destination?:string,
-    date?:string,
+    id: String;
+    flight: String;
+    name: String;
+    email: String;
+    
 
 
 }

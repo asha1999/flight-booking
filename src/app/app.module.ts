@@ -16,8 +16,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ModalModule } from './_modal';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
+import {MatTableModule} from '@angular/material/table';
+import {MatDividerModule} from '@angular/material/divider';
+import {ToastrModule} from 'ngx-toastr';
+//import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BookingdetailsComponent } from './bookingdetails/bookingdetails.component';
+import { from } from 'rxjs';
 //import { HttpConfigInterceptor } from '../app/interceptor/httpconfig.interceptor';
 
 
@@ -26,17 +33,21 @@ import {  HTTP_INTERCEPTORS } from '@angular/common/http';
   declarations: [
     AppComponent,
     routingComponents,
+    BookingdetailsComponent,
+  
+  
     
   
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    FlexLayoutModule,
-    MatInputModule,FormsModule,ReactiveFormsModule,
+    FlexLayoutModule,ToastrModule.forRoot(),
+    MatInputModule,FormsModule,ReactiveFormsModule,ModalModule,MatDividerModule,MatIconModule,MatSelectModule,MatTableModule,
     MatButtonModule,MatCardModule,MatToolbarModule,MatRadioModule,MatGridListModule,MatSnackBarModule, NgbModule
   ],
   

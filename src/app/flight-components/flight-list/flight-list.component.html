@@ -1,3 +1,4 @@
+<body>
 <div class="list row">
     <div class="col-md-8">
       <div class="input-group mb-3">
@@ -38,26 +39,26 @@
     <div class="col-md-6">
       <div *ngIf="currentFlight">
         <h4>Search for Available Flights</h4>
-        <div>
+        <div class="value">
           <label><strong>flights:</strong></label> {{ currentFlight.flight }}
         </div>
-        <div>
+        <div class="value">
           <label><strong>Source:</strong></label>
           {{ currentFlight.source }}
         </div>
-        <div>
+        <div class="value">
             <label><strong>Destination:</strong></label>
             {{ currentFlight.destination }}
           </div>
-          <div>
+          <div class="value">
             <label><strong>Date:</strong></label>
             {{ currentFlight.date }}
           </div>
-          <div>
+          <div class="value">
             <label><strong>Fare:</strong></label>
             {{ currentFlight.fare }}
           </div>
-        <div>
+        <div class="value">
           <label><strong>Status:</strong></label>
           {{ currentFlight.published ? "Published" : "Pending" }}
         </div>
@@ -73,3 +74,4 @@
       </div>
     </div>
   </div>
+  </body>

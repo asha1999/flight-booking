@@ -1,4 +1,4 @@
-
+<body>
 <section>
   <mat-grid-list cols="3">
     <mat-grid-tile colspan="3">
@@ -17,9 +17,15 @@
             <input type="password" formControlName="password" matInput>
           </mat-form-field>
           <br>
-          <button type="submit" mat-raised-button color="primary">Submit</button>
+          <button type="submit" mat-raised-button color="primary">Submit</button>&nbsp;&nbsp;
+         
+             <span>New User?</span>&nbsp;&nbsp;
+          <button type="submit" routerLink="/register" mat-raised-button color="warn">signup</button>
+        
         </form>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </section>
+
+</body>
